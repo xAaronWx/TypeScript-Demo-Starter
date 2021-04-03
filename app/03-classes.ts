@@ -31,3 +31,25 @@ let holler: Person = new Person();
 holler.firstName = "Sheriff";
 holler.lastName = "Holler";
 holler.sayHelloToFullname();
+
+// Method with constructor
+class Game {
+  constructor(name: string, maker: string) {
+    this.gameMaker = maker;
+  }
+  gameName: string;
+  gameMaker: string;
+}
+
+let battleship: Game = new Game("Battleship", "Hasbro");
+
+//Method without constructor
+class GameWithoutConstructor {
+  gameName: string;
+  gameMaker: string;
+}
+
+let monopoly: GameWithoutConstructor = new GameWithoutConstructor();
+
+monopoly.gameName = "Monopoly";
+monopoly.gameMaker = "Hasbro";
